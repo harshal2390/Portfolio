@@ -93,17 +93,32 @@ export const ContactSection = () => {
             <div className="pt-8">
               <h4 className="font-medium mb-4"> Connect With Me</h4>
               <div className="flex space-x-4 justify-center">
-                <a href="#" target="_blank">
+                {/* LinkedIn */}
+                <a
+                  href="https://www.linkedin.com/in/harshalchaudhari063"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-colors"
+                >
                   <Linkedin />
                 </a>
-                <a href="#" target="_blank">
-                  <Twitter />
-                </a>
-                <a href="#" target="_blank">
-                  <Instagram />
-                </a>
-                <a href="#" target="_blank">
-                  <Twitch />
+
+                {/* GitHub */}
+                <a
+                  href="https://github.com/harshal2390"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-colors"
+                >
+                  {/* You can use lucide-react's GitHub icon if imported */}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-6 w-6"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M12 .297a12 12 0 0 0-3.79 23.4c.6.113.82-.26.82-.577v-2.234c-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.09-.746.082-.73.082-.73 1.205.085 1.84 1.236 1.84 1.236 1.07 1.834 2.806 1.304 3.49.997.108-.776.418-1.305.762-1.605-2.665-.304-5.466-1.334-5.466-5.932 0-1.31.469-2.38 1.236-3.22-.123-.304-.536-1.527.117-3.18 0 0 1.008-.323 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.553 3.297-1.23 3.297-1.23.655 1.653.242 2.876.12 3.18.77.84 1.236 1.91 1.236 3.22 0 4.61-2.805 5.624-5.475 5.922.43.37.814 1.102.814 2.222v3.293c0 .32.22.694.825.576A12 12 0 0 0 12 .297z" />
+                  </svg>
                 </a>
               </div>
             </div>

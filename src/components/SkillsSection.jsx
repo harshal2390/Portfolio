@@ -4,27 +4,48 @@ import { cn } from "@/lib/utils";
 const skills = [
   // Frontend
   { name: "HTML/CSS", level: 95, category: "frontend" },
-  { name: "JavaScript", level: 90, category: "frontend" },
+  { name: "JavaScript (ES6+)", level: 90, category: "frontend" },
   { name: "React", level: 90, category: "frontend" },
-  { name: "TypeScript", level: 85, category: "frontend" },
-  { name: "Tailwind CSS", level: 90, category: "frontend" },
-  { name: "Next.js", level: 80, category: "frontend" },
+  { name: "Bootstrap", level: 85, category: "frontend" },
 
   // Backend
   { name: "Node.js", level: 80, category: "backend" },
   { name: "Express", level: 75, category: "backend" },
-  { name: "MongoDB", level: 70, category: "backend" },
-  { name: "PostgreSQL", level: 65, category: "backend" },
-  { name: "GraphQL", level: 60, category: "backend" },
+  { name: "Spring MVC", level: 70, category: "backend" },
 
-  // Tools
+  // Databases
+  { name: "MongoDB", level: 75, category: "database" },
+  { name: "MySQL", level: 80, category: "database" },
+
+  // Tools & DevOps
   { name: "Git/GitHub", level: 90, category: "tools" },
-  { name: "Docker", level: 70, category: "tools" },
-  { name: "Figma", level: 85, category: "tools" },
   { name: "VS Code", level: 95, category: "tools" },
+
+  { name: "Jupyter NoteBook", level: 80, category: "tools" },
+
+  // Programming Languages
+  { name: "C++ ", level: 85, category: "programming" },
+  { name: "Python", level: 80, category: "programming" },
+  { name: "Java ", level: 75, category: "programming" },
+
+  // Machine Learning / AI
+  { name: "Scikit-learn", level: 75, category: "ML/AI" },
+  { name: "Pandas", level: 80, category: "ML/AI" },
+  { name: "NumPy", level: 80, category: "ML/AI" },
+  { name: "Matplotlib/Seaborn", level: 75, category: "ML/AI" },
+  { name: "TensorFlow (Basics)", level: 65, category: "ML/AI" },
+  { name: "Streamlit", level: 70, category: "ML/AI" },
 ];
 
-const categories = ["all", "frontend", "backend", "tools"];
+const categories = [
+  "all",
+  "frontend",
+  "backend",
+  "database",
+  "tools",
+  "programming",
+  "ML/AI",
+];
 
 export const SkillsSection = () => {
   const [activeCategory, setActiveCategory] = useState("all");
@@ -32,6 +53,7 @@ export const SkillsSection = () => {
   const filteredSkills = skills.filter(
     (skill) => activeCategory === "all" || skill.category === activeCategory
   );
+
   return (
     <section id="skills" className="py-24 px-4 relative bg-secondary/30">
       <div className="container mx-auto max-w-5xl">
@@ -39,6 +61,7 @@ export const SkillsSection = () => {
           My <span className="text-primary"> Skills</span>
         </h2>
 
+        {/* Categories Buttons */}
         <div className="flex flex-wrap justify-center gap-4 mb-12">
           {categories.map((category, key) => (
             <button
@@ -56,6 +79,7 @@ export const SkillsSection = () => {
           ))}
         </div>
 
+        {/* Skills Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredSkills.map((skill, key) => (
             <div
@@ -71,7 +95,6 @@ export const SkillsSection = () => {
                   style={{ width: skill.level + "%" }}
                 />
               </div>
-
               <div className="text-right mt-1">
                 <span className="text-sm text-muted-foreground">
                   {skill.level}%

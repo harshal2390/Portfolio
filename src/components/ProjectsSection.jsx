@@ -3,32 +3,62 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "SaaS Landing Page",
-    description: "A beautiful landing page app using React and Tailwind.",
-    image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
+    title: "SplitApp",
+    description:
+      "A group expense tracking application with features like splitting bills, payment history, and summaries.",
+    image: "/projects/splitapp.png",
+    tags: ["React", "Node.js", "MongoDB"],
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/harshal2390/SplitApp",
   },
   {
     id: 2,
-    title: "Orbit Analytics Dashboard",
+    title: "Prescripto",
     description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
-    image: "/projects/project2.png",
-    tags: ["TypeScript", "D3.js", "Next.js"],
+      "Online appointment booking platform for doctors and patients with a secure database system.",
+    image: "/projects/prescripto.png",
+    tags: ["React", "Express", "MongoDB"],
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/harshal2390/Prescripto",
   },
   {
     id: 3,
-    title: "E-commerce Platform",
+    title: "Wanderlust",
     description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
-    image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
+      "Travel booking platform inspired by Airbnb with property listings, reviews, and booking options.",
+    image: "/projects/wanderlust.png",
+    tags: ["Node.js", "Express", "MongoDB"],
+    demoUrl: "https://wanderlust-6aaz.onrender.com",
+    githubUrl: "https://github.com/harshal2390/Wanderlust",
+  },
+  {
+    id: 4,
+    title: "CO2 Emission Prediction",
+    description:
+      "Machine learning project to predict CO2 emissions based on vehicle specifications using regression models.",
+    image: "/projects/co2.png",
+    tags: ["Python", "Scikit-learn", "Streamlit"],
+    demoUrl: "https://co2-emission-prediction-4.streamlit.app",
+    githubUrl: "https://github.com/harshal2390/CO2-Emission-Prediction",
+  },
+  {
+    id: 5,
+    title: "CBIR System",
+    description: "Implemented a CBIR system using pre-traained ResNet50 Model",
+    image: "/projects/cbir.png",
+    tags: ["Python", "CNN", "openCV"],
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/harshal2390/Content-Based-Image-Retrieval",
+  },
+  {
+    id: 6,
+    title: "MediPredictor",
+    description:
+      "A multiple disease prediction app built using ML models and deployed with Streamlit.",
+    image: "/projects/medipredictor.png",
+    tags: ["Python", "Streamlit", "Scikit-learn"],
+    demoUrl: "https://medipredictor.streamlit.app",
+    githubUrl: "https://github.com/harshal2390/MediPredictor",
   },
 ];
 
@@ -37,7 +67,6 @@ export const ProjectsSection = () => {
     <section id="projects" className="py-24 px-4 relative">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-          {" "}
           Featured <span className="text-primary"> Projects </span>
         </h2>
 
@@ -62,14 +91,17 @@ export const ProjectsSection = () => {
 
               <div className="p-6">
                 <div className="flex flex-wrap gap-2 mb-4">
-                  {project.tags.map((tag) => (
-                    <span className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground">
+                  {project.tags.map((tag, index) => (
+                    <span
+                      key={index}
+                      className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground"
+                    >
                       {tag}
                     </span>
                   ))}
                 </div>
 
-                <h3 className="text-xl font-semibold mb-1"> {project.title}</h3>
+                <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
                 <p className="text-muted-foreground text-sm mb-4">
                   {project.description}
                 </p>
@@ -100,7 +132,7 @@ export const ProjectsSection = () => {
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
             target="_blank"
-            href="https://github.com/machadop1407"
+            href="https://github.com/harshal2390"
           >
             Check My Github <ArrowRight size={16} />
           </a>
