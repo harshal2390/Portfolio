@@ -6,7 +6,7 @@ const projects = [
     title: "SplitApp",
     description:
       "A group expense tracking application with features like splitting bills, payment history, and summaries.",
-    image: "/projects/splitapp.png",
+    image: "/projects/split.png",
     tags: ["React", "Node.js", "MongoDB"],
     demoUrl: "#",
     githubUrl: "https://github.com/harshal2390/SplitApp",
@@ -15,7 +15,7 @@ const projects = [
     id: 2,
     title: "Prescripto",
     description:
-      "Online appointment booking platform for doctors and patients with a secure database system.",
+      "Online appointment booking platform for doctors and patients with a secure database and Payment system.",
     image: "/projects/prescripto.png",
     tags: ["React", "Express", "MongoDB"],
     demoUrl: "#",
@@ -45,7 +45,7 @@ const projects = [
     id: 5,
     title: "CBIR System",
     description: "Implemented a CBIR system using pre-traained ResNet50 Model",
-    image: "/projects/cbir.png",
+    image: "/projects/CBIR.png",
     tags: ["Python", "CNN", "openCV"],
     demoUrl: "#",
     githubUrl: "https://github.com/harshal2390/Content-Based-Image-Retrieval",
@@ -55,7 +55,7 @@ const projects = [
     title: "MediPredictor",
     description:
       "A multiple disease prediction app built using ML models and deployed with Streamlit.",
-    image: "/projects/medipredictor.png",
+    image: "/projects/medi.png",
     tags: ["Python", "Streamlit", "Scikit-learn"],
     demoUrl: "https://medipredictor.streamlit.app",
     githubUrl: "https://github.com/harshal2390/MediPredictor",
