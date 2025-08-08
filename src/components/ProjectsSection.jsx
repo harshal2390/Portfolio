@@ -44,7 +44,8 @@ const projects = [
   {
     id: 5,
     title: "CBIR System",
-    description: "Implemented a CBIR system using pre-traained ResNet50 Model",
+    description:
+      "Implemented a CBIR system using pre-traained ResNet50 Model and match fetaures using euclidean distance",
     image: "/projects/CBIR.png",
     tags: ["Python", "CNN", "openCV"],
     demoUrl: "#",
@@ -59,6 +60,28 @@ const projects = [
     tags: ["Python", "Streamlit", "Scikit-learn"],
     demoUrl: "https://medipredictor.streamlit.app",
     githubUrl: "https://github.com/harshal2390/MediPredictor",
+  },
+  {
+    id: 7,
+    title: "ChildCare",
+    description:
+      "A Missing Child Reporting System with roles for Admin, Police, and Citizens, built using Servlet, JSP, HTML, CSS.",
+    image: "/projects/childcare.png",
+    tags: ["Servlet", "JSP", "Tomcat"],
+    demoUrl: "#",
+    githubUrl:
+      "https://github.com/harshal2390/ChildCare-Missing-child-report-platform",
+  },
+  {
+    id: 8,
+    title: "DigiFarmLoan Portal",
+    description:
+      "A loan management portal for farmers built with Spring MVC, Hibernate, JSP, and deployed on Tomcat server.",
+    image: "/projects/digifarmloan.png",
+    tags: ["Spring MVC", "Hibernate", "JSP"],
+    demoUrl: "#",
+    githubUrl:
+      "https://github.com/harshal2390/DigiFarmLoan-Agricultural-Loan-Application-Portal",
   },
 ];
 
