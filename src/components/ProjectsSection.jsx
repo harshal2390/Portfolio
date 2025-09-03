@@ -13,6 +13,16 @@ const projects = [
   },
   {
     id: 2,
+    title: "FreeLancer Hub",
+    description:
+      "Freelancing Platform For the Freelancer and Employer with Chat and Payment System",
+    image: "/projects/freelancer.png",
+    tags: ["EJS", "Express", "MongoDB"],
+    demoUrl: "#",
+    githubUrl: "https://github.com/harshal2390/freeLancer-s-Hub",
+  },
+  {
+    id: 3,
     title: "Prescripto",
     description:
       "Online appointment booking platform for doctors and patients with a secure database and Payment system.",
@@ -22,7 +32,7 @@ const projects = [
     githubUrl: "https://github.com/harshal2390/Prescripto",
   },
   {
-    id: 3,
+    id: 4,
     title: "Wanderlust",
     description:
       "Travel booking platform inspired by Airbnb with property listings, reviews, and booking options.",
@@ -32,7 +42,7 @@ const projects = [
     githubUrl: "https://github.com/harshal2390/Wanderlust",
   },
   {
-    id: 4,
+    id: 5,
     title: "CO2 Emission Prediction",
     description:
       "Machine learning project to predict CO2 emissions based on vehicle specifications using regression models.",
@@ -42,7 +52,7 @@ const projects = [
     githubUrl: "https://github.com/harshal2390/CO2-Emission-Prediction",
   },
   {
-    id: 5,
+    id: 6,
     title: "CBIR System",
     description:
       "Implemented a CBIR system using pre-traained ResNet50 Model and match fetaures using euclidean distance",
@@ -52,7 +62,7 @@ const projects = [
     githubUrl: "https://github.com/harshal2390/Content-Based-Image-Retrieval",
   },
   {
-    id: 6,
+    id: 7,
     title: "MediPredictor",
     description:
       "A multiple disease prediction app built using ML models and deployed with Streamlit.",
@@ -62,7 +72,7 @@ const projects = [
     githubUrl: "https://github.com/harshal2390/MediPredictor",
   },
   {
-    id: 7,
+    id: 8,
     title: "ChildCare",
     description:
       "A Missing Child Reporting System with roles for Admin, Police, and Citizens, built using Servlet, JSP, HTML, CSS.",
@@ -73,7 +83,7 @@ const projects = [
       "https://github.com/harshal2390/ChildCare-Missing-child-report-platform",
   },
   {
-    id: 8,
+    id: 9,
     title: "DigiFarmLoan Portal",
     description:
       "A loan management portal for farmers built with Spring MVC, Hibernate, JSP, and deployed on Tomcat server.",
